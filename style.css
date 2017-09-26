@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+
+
+.fontTitle, h1, .credit p{
+    font-family: Ubuntu, sans-serif; /*Will import fonts later*/
+    letter-spacing: 10px;
+    text-transform: uppercase;
+}
+
+body{
+    background: linear-gradient(to right, #d53369, #cbad6d)
+}
+
+h1{
+    font-weight: 300;
+    text-align: center;
+    color: black;
+}
+
+.credit{
+    position: relative;
+    top: 30px;
+}
+.credit p{
+    font-size: 10px;
+    font-weight: 800;
+    text-align: center;
+}
+.credit a{
+    transition: all 200ms ease-in-out;
+}
+.credit alink, .credit a:visited, .credit a:hover, .credit a:active{
+    text-decoration: none;
+    color: black;
+}
+.credit a:hover{
+    color: #ff6984
+}
+
+/* resetting defauls */
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.border{
+    border: 3px solid white !important;
+}
+
+.length{
+    width: 80px !important
+}
+.opacity{
+    opacity: 1 !important
+}
+.container{
+    float: left;
+    display: flex;
+    position: relative;
+    left: 50%;
+    top: 100px;
+    transform: translateX(-50%);
+}
+.container .day1, .container .day2, .container .day3{
+    color: white; width: 120px;
+    text-transform: uppercase;
+    float: left;
+    position: relative;
+    top: 20px;
+    left: -8px;
+    opacity: 0;
+    transition: all 100ms ease-in-out;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.container .day{
+    margin: 0 50px 0 50px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    transition: all 100ms ease-in-out;
+    border: 0 solid white;
+}
+.container .day:before{
+    content: '';
+    float: left;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    position: relative;
+    width: 15px;
+    height: 15px;
+    background: white; border-radius: 50%;;
+}
+
+.container .day .dash {
+    width: 0px;
+    height: 2px;
+    background: white;
+    position: relative;
+    top: 45%;
+    transition: all 200ms cubic-bezier(1,-0.02, 1, 0.75);
+    /*HOLY SHIT*/
+    left: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
